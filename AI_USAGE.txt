@@ -24,3 +24,5 @@ Nov 21 09:24:38 localhost systemd[1]: Failed to start webapp.service - Gunicorn 
 create app.py - generating codes
 
 generating task 1.4 monitor.sh file
+
+install docker with AI help - generating commands.
