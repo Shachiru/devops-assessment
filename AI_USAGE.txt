@@ -65,3 +65,5 @@ docker volume prune -f
 # Rebuild and start
 cd /opt/webapp
 docker-compose up -d --build
+
+Install K3s (Kubernetes) - get commands gemini AI
