@@ -1,1 +1,8 @@
 Learn more about Docker by using Gemini AI.
+
+/opt/webapp/venv/bin/pip freeze > /opt/webapp/app/requirements.txt
+
+/opt/webapp/venv/bin/pip install flask gunicorn
+install gunicorn
+
+Connected to the server with gemini support.
