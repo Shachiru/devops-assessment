@@ -1,0 +1,12 @@
+=== Monitoring Report: Fri Nov 21 10:09:41 AM UTC 2025 ===
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       366Mi       684Mi       1.0Mi       1.1Gi       1.6Gi
+Swap:          511Mi          0B       511Mi
+Disk Usage /opt/webapp:
+22M     /opt/webapp/
+App Status:
+active
+Nginx Status:
+active
+---------------------------------

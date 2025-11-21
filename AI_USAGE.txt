@@ -21,3 +21,6 @@ Nov 21 09:24:38 localhost systemd[1]: webapp.service: Start request repeated too
 Nov 21 09:24:38 localhost systemd[1]: webapp.service: Failed with result 'exit-code'.
 Nov 21 09:24:38 localhost systemd[1]: Failed to start webapp.service - Gunicorn instance to serve webapp.
 
+create app.py - generating codes
+
+generating task 1.4 monitor.sh file
