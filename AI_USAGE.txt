@@ -26,3 +26,16 @@ create app.py - generating codes
 generating task 1.4 monitor.sh file
 
 install docker with AI help - generating commands.
+
+(get this command using gemini)
+docker images webapp:v1
+docker history webapp:v1
+
+
+(fix this error using AI)
+root@localhost:~# docker ps
+curl http://localhost:5000/
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS                         PORTS     NAMES
+67258ac13ec7   webapp:v1   "gunicorn --bind 0.0…"   7 seconds ago   Restarting (4) 2 seconds ago             webapp-container
+curl: (7) Failed to connect to localhost port 5000 after 0 ms: Couldn't connect to server
+
