@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn instance to serve webapp
+After=network.target
+
+[Service]
+User=webapp
+Group=webapp
+WorkingDirectory=/opt/webapp/app
+Environment="PATH=/opt/webapp/venv/bin"
+ExecStart=/opt/webapp/venv/bin/gunicorn --workers 3 --bind 0.0.0.0:5000 app:app --access-logfile /opt/webapp/logs/access.log --error-logfile /opt/webapp/logs/error.log
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
