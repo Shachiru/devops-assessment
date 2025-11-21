@@ -6,3 +6,18 @@ Learn more about Docker by using Gemini AI.
 install gunicorn
 
 Connected to the server with gemini support.
+
+(get this error and fix it using AI)
+root@localhost:/opt/webapp# systemctl status webapp
+× webapp.service - Gunicorn instance to serve webapp
+     Loaded: loaded (/etc/systemd/system/webapp.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2025-11-21 09:24:38 UTC; 21s ago
+   Duration: 99ms
+   Main PID: 4103 (code=exited, status=1/FAILURE)
+        CPU: 94ms
+
+Nov 21 09:24:38 localhost systemd[1]: webapp.service: Scheduled restart job, restart counter is at 5.
+Nov 21 09:24:38 localhost systemd[1]: webapp.service: Start request repeated too quickly.
+Nov 21 09:24:38 localhost systemd[1]: webapp.service: Failed with result 'exit-code'.
+Nov 21 09:24:38 localhost systemd[1]: Failed to start webapp.service - Gunicorn instance to serve webapp.
+
