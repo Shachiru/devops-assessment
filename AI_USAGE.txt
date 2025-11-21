@@ -67,3 +67,10 @@ cd /opt/webapp
 docker-compose up -d --build
 
 Install K3s (Kubernetes) - get commands gemini AI
+
+get this 4 files using gemini
+          redis-deployment.yaml
+          redis-service.yaml
+          webapp-deployment.yaml
+          webapp-service.yaml
+
