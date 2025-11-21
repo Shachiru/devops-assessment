@@ -39,3 +39,29 @@ CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS      
 67258ac13ec7   webapp:v1   "gunicorn --bind 0.0…"   7 seconds ago   Restarting (4) 2 seconds ago             webapp-container
 curl: (7) Failed to connect to localhost port 5000 after 0 ms: Couldn't connect to server
 
+get this commands -> for fix the error (couldn't connect to server)
+apt update && apt install -y docker-compose
+docker-compose up -d --build
+
+Fix for the ContainerConfig Error - using github copilot
+
+get this commands - 
+ docker-compose down
+ docker-compose down -v --remove-orphans
+ docker rm -f 5b5761432039_webapp_webapp_1
+ docker container prune -f
+ docker image prune -f
+ docker-compose build --no-cache
+docker-compose up -d
+# Stop all containers
+docker stop $(docker ps -aq)
+
+# Remove all containers
+docker rm $(docker ps -aq)
+
+# Remove unused volumes
+docker volume prune -f
+
+# Rebuild and start
+cd /opt/webapp
+docker-compose up -d --build
